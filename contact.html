@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intitial scale=1.0">
+    <title> Dawn's Contact Page </title>
+    <link rel="stylesheet" href="css.css">
+    <!-- I like the look of these fonts together -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="index.js"> </script> 
+  </head>
+<body>
+    <div class="grid-container">
+        <div class="topnav">
+            <!-- Centered link -->
+            <div class="topnav-centered">
+                <a href="home.html" >Home</a>
+            </div>
+        
+            <!-- Left-aligned links (default) -->
+            <a href="about.html" >About</a>
+              
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+        
+        <div class="header">
+            <h1>Let's keep in touch</h1>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <form name = "contactForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
+                <div class="row">
+                  <div class="label">
+                    <label for="fname">First Name</label>
+                  </div>
+                  <div class="input">
+                    <input type="text" id="firstName" name="firstname" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="label">
+                    <label for="lname">Last Name</label>
+                  </div>
+                  <div class="input">
+                    <input type="text" id="lastName" name="lastname" placeholder="Your last name..">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                      <label for="email">E-Mail Address</label>
+                    </div>
+                    <div class="input">
+                      <input type="text" id="mail" name="mail" placeholder="Your email address..">
+                    </div>
+                  </div>
+  
+                <div class="row">
+                    <div class="label">
+                      <label for="subject">Subject</label>
+                    </div>
+                    <div class="input">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                  </form>
+                </div>        
+</body>
+</html>
